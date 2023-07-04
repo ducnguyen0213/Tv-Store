@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Bootstrap icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <style>
+    .form-check-input {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+
+  .form-check-input:checked {
+    background-color: #000;
+  }
+  .check:hover{
+    background-color:bisque ;
+     /* cursor: pointer; */
+  } .check1:hover{
+    /* background-color:bisque ; */
+     cursor: pointer;
+  }
+  input[type="rdaio"]{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background: #f2f2f2;
+    cursor: pointer;
+    box-shadow: 0 0 4px #ccc;
+    transition: 0.2s;
+  }
+  input[type="radio"]:hover{
+    box-shadow: 0 0 8px #ccc;
+  }
+  </style>
+  <title>Smart Tivi QLED 4K 55 inch Samsung QA55Q65A</title>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 80px;">
+    <div class="container px-4 px-lg-5 d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="TrangChu.html">TV Store</a>
+
+      <div class="d-flex align-items-center" style="margin: 15px;">
+        <p class="mr-4 " style="width: 250px; margin-right: 8px; margin-top: 10px;">Địa chỉ: <br><i
+            class="bi bi-geo-alt-fill text-danger"></i> <a href="#" data-toggle="modal" data-target="#myModal">Tìm cửa
+            hàng</a>
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal body -->
+              <div class="modal-body">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1189.97017354788!2d105.75817744429007!3d21.042440256169577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454c1d51abda5%3A0x5cf61d7d3b782a21!2zxJBp4buHbiBNw6F5IFhhbmg!5e0!3m2!1svi!2s!4v1675518333765!5m2!1svi!2s"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" style="pointer-events: none;"></iframe>
+                <button id="close-button">Close Map</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </p>
+        <p class="mr-4">Tư vấn bán hàng: <a href="#">(+84) 0981 927 862</a></p>
+        <i class="fa fa-phone mr-4" style="font-size:24px"></i>
+      </div>
+      <form class="form-inline my-2  my-lg-0 d-flex" style="margin-left: 15px;">
+        <input class="form-control mr-sm-2 ml-2" style="width: 500px" type="search" placeholder="Search"
+          aria-label="Search">
+        <button class="btn btn-outline-dark my- my-sm-0" type="submit" style="margin-right: 55px; width: 140px;">Tìm
+          kiếm <i class="bi bi-search "></i></button>
+      </form>
+      <form class="d-flex ml-3">
+        <button class="btn btn-outline-dark " type="submit" style="width: 150px;">
+          <a href="GioHang.html" style="text-decoration: none" class="text-dark">
+            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            Giỏ hàng
+            <i class="bi-cart-fill me-1"></i>
+            </a>
+        </button>
+      </form>
+    </div>
+    </div>
+  </nav>
+  <div class="container py-5 my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="product-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://cdn.tgdd.vn/Products/Images/1942/235642/qled-4k-samsung-qa55q65a-2.jpg"
+                class="img-fluid" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.tgdd.vn/Products/Images/1942/235642/qled-4k-samsung-qa55q65a-3.jpg"
+                class="img-fluid" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+              <video autoplay="" muted="" loop="" width="634" height="424">
+                <source src="https://cdn.tgdd.vn/Products/Images/235642/Samsung%20-%20Q%20Symphony.mp4"
+                  type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video autoplay="" muted="" loop="" width="634" height="424">
+                <source
+                  src="https://cdn.tgdd.vn/Products/Images/235642/SAMSUNG%20-%20Quantum%20HDR%20v%C3%A0%20HDR10+.mp4"
+                  type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video autoplay="" muted="" loop="" width="634" height="424">
+                <source
+                  src="https://cdn.tgdd.vn/Products/Images/235642/SAMSUNG%20-%20Super%20Ultra%20GameView%20&%20Game%20Bar.mp4"
+                  type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video autoplay="" muted="" loop="" width="634" height="424">
+                <source src="https://cdn.tgdd.vn/Products/Images/235642/SAMSUNG%20-%20OTS%20Lite.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/1942/235642/Slider/qled-4k-samsung-qa55q65a637982431101732962.jpg"
+                class="img-fluid" alt="Image 7">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.tgdd.vn/Products/Images/1942/235642/Slider/Untitled-1-1020x570.png"
+                class="img-fluid" alt="Image 8">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.tgdd.vn/Products/Images/1942/235642/qled-4k-samsung-qa55q65a-11.jpg"
+                class="img-fluid" alt="Image 9">
+            </div>
+            <div class="carousel-item ">
+              <video autoplay="" muted="" loop="" width="634" height="424">
+                <source src="https://cdn.tgdd.vn/Products/Images/235642/SAMSUNG - Quantum dot cho QLED.mp4"
+                  type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h1>Smart Tivi QLED 4K 55 inch Samsung QA55Q65A</h1>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <strong>Kích cỡ màn hình:</strong>
+              <div class="form-check check" type="radio"  >
+                <label class="form-check-label check1" for="43inch">43 inch</label>
+              </div>
+            
+          </li>
+          <li class="list-group-item"><strong>Độ phân giải: </strong> 4K (Ultra HD)</li>
+          <li class="list-group-item"><strong>Loại Tivi: </strong> Smart Tivi QLED</li>
+          <li class="list-group-item"><strong>Hãng: </strong> Samsung</li>
+        </ul>
+        <div class="d-flex justify-content-between align-items-center my-3">
+          <h3 class="my-3 text-danger">15.200.000₫</h3>
+          <div class="btn-group">
+            <button class="btn btn-outline-danger btn-lg">
+              <a href="GioHang.html" style="text-decoration: none" class="text-dark">
+              Mua ngay
+              </a>
+            </button>
+            <button class="btn btn-outline-dark btn-lg">
+              <i class="bi bi-cart-plus-fill text-danger"></i>
+              <a href="GioHang.html" style="text-decoration: none" class="text-dark">
+              Thêm vào giỏ
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="mr-2 text-warning">
+            <i class="bi-star-fill"></i>
+            <i class="bi-star-fill"></i>
+            <i class="bi-star-fill"></i>
+            <i class="bi-star-fill"></i>
+            <i class="bi-star"></i>
+          </div>
+          <small class="text-muted">5.0 (100 Reviews)</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <h1>Thông tin chi tiết TV</h1>
+    <div class="d-flex align-items-center">
+      <img src="https://cdn.tgdd.vn/Products/Images/1942/235642/Kit/qled-4k-samsung-qa55q65a-note.jpg" class="img-fluid"
+        alt="ctsp">
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="background-color: #f1f1f1;">Tổng quan sản phẩm</h3>
+          </div>
+          <div class="panel-body">
+            <table class="table">
+              <tr>
+                <td class="fw-bolder">Loại Tivi:</td>
+                <td>LED 4K Samsung UA55AU8100</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Kích cỡ màn hình: </td>
+                <td>55 inch</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Độ phân giải: </td>
+                <td>3840 x 2160</td>
+              </tr>
+              <!-- thêm các thông tin khác tại đây -->
+              <tr>
+                <td class="fw-bolder">Loại màn hình:</td>
+                <td>LED viền kết hợp Dual LED, VA LCD</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Hệ điều hành:</td>
+                <td>Tizen OS 6.0</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Chất liệu chân đế:</td>
+                <td>Nhựa</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Chất liệu viền tivi:</td>
+                <td>Nhựa</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Nơi sản xuất:</td>
+                <td>Việt Nam</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Năm ra mắt:</td>
+                <td>2021</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="background-color: #f1f1f1;">Công nghệ màn hình</h3>
+          </div>
+          <div class="panel-body">
+            <table class="table">
+              <tr>
+                <td class="fw-bolder">Công nghệ hình ảnh:</td>
+                <td>
+                  <ul style="margin-left: 70px;">
+                    <li>Ambient Mode</li>
+                    <li>Brightness/Color Detection</li>
+                    <li>HDR10+</li>
+                    <li>Quantum Dot hiển thị 100% dải màu</li>
+                    <li>Quantum HDR</li>
+                    <li>Supreme UHD Dimming</li>
+                    <li>Chuyển động mượt Motion Xcelerator Turbo</li>
+                    <li>Super Ultra Wide Game View & Game Bar</li>
+                    <li>Giảm độ trễ chơi game Auto Low Latency Mode (ALLM)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Bộ xử lý:</td>
+                <td style="padding-left: 80px;">Bộ xử lý Quantum 4K Lite</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Tần số quét thực:</td>
+                <td style="padding-left: 80px;">60 Hz</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="background-color: #f1f1f1;">Tiện ích</h3>
+          </div>
+          <div class="panel-body">
+            <!-- thêm thông tin về công nghệ màn hình tại đây -->
+            <table class="table">
+              <tr>
+                <td class="fw-bolder">Điều khiển tivi bằng điện thoại:</td>
+                <td>SmartThings</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Điều khiển bằng giọng nói:</td>
+                <td>
+                  <ul>
+                    <li>Bixby (Chưa có tiếng Việt)</li>
+                    <li>Tìm kiếm giọng nói trên YouTube bằng tiếng Việt</li>
+                    <li>Google Assistant có tiếng Việt</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Chiếu hình từ điện thoại lên TV:</td>
+                <td>AirPlay 2,Tap View</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Remote thông minh:</td>
+                <td>One Remote sạc qua USB C & ánh sáng</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Ứng dụng phổ biến:</td>
+                <td>
+                  <ul>
+                    <li>YouTube</li>
+                    <li>Netflix</li>
+                    <li>Galaxy Play (Fim+)</li>
+                    <li>Clip TV</li>
+                    <li>FPT Play</li>
+                    <li>MyTV</li>
+                    <li>POPS Kids</li>
+                    <li>VieON</li>
+                    <li>MP3 Zing</li>
+                    <li>Spotify</li>
+                    <li>Trình duyệt web</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Tiện ích thông minh khác:</td>
+                <td>
+                  <ul>
+                    <li>Chế độ máy tính PC trên tivi</li>
+                    <li>Gọi video qua Google Duo (mua thêm camera)</li>
+                    <li>Multi View chia nhỏ màn hình tivi</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="background-color: #f1f1f1;">Công nghệ âm thanh</h3>
+          </div>
+          <div class="panel-body">
+            <table class="table">
+              <tr>
+                <td class="fw-bolder">Tổng công suất loa:</td>
+                <td style="padding-left: 80px;">20W</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Số lượng loa:</td>
+                <td style="padding-left: 80px;">2 loa</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Âm thanh vòm:</td>
+                <td style="padding-left: 80px;">Âm thanh chuyển động theo hình ảnh OTS Lite</td>
+              </tr>
+             
+              <tr>
+                <td class="fw-bolder">Kết nối với loa tivi:</td>
+                <td style="padding-left: 80px;">Có</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Các công nghệ khác:</td>
+                <td style="padding-left: 80px;">Q-Symphony kết hợp loa tivi với loa thanh</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="background-color: #f1f1f1;">Cổng kết nối</h3>
+          </div>
+          <div class="panel-body">
+            <table class="table">
+              <tr>
+                <td class="fw-bolder">Kết nối Internet:</td>
+                <td>Cổng mạng LAN, Wifi</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Kết nối không dây:</td>
+                <td>Bluetooth (Kết nối loa, thiết bị di động)</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">USB:</td>
+                <td>2 cổng USB A</td>
+              </tr>
+
+              <tr>
+                <td class="fw-bolder">Cổng nhận hình ảnh, âm thanh:</td>
+                <td>3 cổng HDMI có 1 cổng HDMI eARC (ARC), 1 cổng Composite</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Cổng xuất âm thanh:</td>
+                <td>1 cổng Optical (Digital Audio), 1 cổng eARC (ARC)</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="background-color: #f1f1f1;">Thông tin lắp đặt</h3>
+          </div>
+          <div class="panel-body">
+            <table class="table">
+              <tr>
+                <td class="fw-bolder">Kích thước có chân, đặt bàn:</td>
+                <td style="padding-right: 140px;">Ngang 123.2 cm - Cao 76.4 cm - Dày 24.9 cm</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Khối lượng có chân:</td>
+                <td>16.3 Kg</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Độ phân giải</td>
+                <td>3840 x 2160</td>
+              </tr>
+              <!-- thêm các thông tin khác tại đây -->
+              <tr>
+                <td class="fw-bolder">Kích thước không chân, treo tường:</td>
+                <td>Ngang 123.2 cm - Cao 70.2 cm - Dày 2.6 cm</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Khối lượng không chân:</td>
+                <td>15.5 Kg</td>
+              </tr>
+              <tr>
+                <td class="fw-bolder">Hãng:</td>
+                <td>Samsung</td>
+              </tr>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="text-center text-white">Address: Thái Bình, Việt Nam</p>
+      <p class="text-center text-white">Phone: 0981927862 | Email: ducnhph21317@fpt.edu</p>
+    </div>
+  </footer>
+</body>
+
+</html>
